@@ -1,0 +1,23 @@
+/* Loader.css */
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100%;*/
+    /* margin-top: 15px; */
+}
+  
+.loader .anticon {
+    animation: spin 1s linear infinite; /* Define spin animation */
+}
+  
+/* Keyframes for continuous spin */
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+  
