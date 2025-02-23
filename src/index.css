@@ -1,0 +1,71 @@
+/** @format */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "CreatoDisplay", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --primary-color: #79d4fd;
+  --secondary-color: #0078d4;
+  --tertiary-color: #80d0e3;
+  --background-color: #fbfbfb;
+  --primary-text-color: #fff;
+  --secondary-text-color: #8d8d8d;
+  --tertiary-text-color: #ffffff;
+  --btn-color: #05a5cb;
+}
+
+.custom-tabs .ant-tabs-nav::before {
+  border-bottom: none !important;
+}
+
+.custom-tabs .ant-tabs-ink-bar {
+  display: none !important;
+}
+
+/* Custom Thin Grey Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #05a5cb;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #05a5cb;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-radio .ant-checkbox-inner {
+  border-radius: 50%;
+  border: 2px solid #00aeef;
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.custom-radio .ant-checkbox-checked .ant-checkbox-inner {
+  background-color: transparent;
+  border-color: #00aeef;
+}
+
+.custom-radio .ant-checkbox-checked .ant-checkbox-inner::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #00aeef;
+  border-radius: 50%;
+  position: absolute;
+  top: 55%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
